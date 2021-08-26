@@ -1,8 +1,4 @@
-#include <algorithm>
 #include <iostream>
-#include <string>
-#include <vector>
-#include <map>
 #include <cmath>
 using namespace std;
 
@@ -11,10 +7,12 @@ int main()  {
 
     cin >> a >> b >> c;
     D = (b * b) - (4 * a * c);
-
     if (a == 0) {
-        x = -c / b;
-        cout << x << endl;
+        if (b != 0)
+        {
+            x = -c / b;
+            cout << x << endl;
+        }
     }
     else {
         if (D > 0)  {
