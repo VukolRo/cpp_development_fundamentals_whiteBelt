@@ -2,16 +2,10 @@
 using namespace std;
 
 int Factorial (int x)   {
-    if (x < 2)  {
+    if (x <= 1) {
         return 1;
     }   else    {
-        int i = 2;
-        int r = 1;
-        while (i <= x)  {
-            r = r * i;
-            i++;
-        }
-        return r;
+        return x * Factorial(x - 1);
     }
 }
 
